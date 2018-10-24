@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>Trivia!</title>
+</head>
+<body>
+    <div class= "container-fluid jumbotron">
+       <div class= "row">
+           <div class-= "col">
+            Dwight Trivia!
+            </div>
+
+        </div>
+    </div> 
+
+    <div class= "container-fluid body">
+        <div class="row">
+                <div class="col-lg-12 instructions">
+                    <strong>This isn't your grandmother's Trivia Game. 
+                    This trivia's accuracy was assessed and confirmed by Dwight K. Schrute. 
+                    In order to win, you have to think like Dwight, talk like Dwight. You have to become...Dwight (although that's impossible).Those who lose to the timer will suffer the Schrute wrath.
+                    May the strength of my Aunt Shirley Schrute befall you in your quest. </strong>
+                    
+                </div>
+        </div>
+            <div class= "row question">
+               <div class = "col-lg-5 game ">
+                   <h1 class= "questions"> Questions appear here</h1><br>
+                   <br>
+                    <h5 class= "q1">Choice 1 text</h5>
+                    <br>
+                    <h5 class= "q2"> Choice 2 text</h5>
+                    <br>
+                   <h5 class= "q3"> Choice 3 text</h5>
+                
+                    
+               </div>        
+                <div class= "col-lg-4"></div>
+                <div class="col-lg-3 timer"><br>
+                        00:25
+                </div>
+            
+                <!-- <div class= "row"><div class="col c1"><p> Choice 1 text</p></div></div>
+                <div class= "row"><div class= "col c2"><p> Choice 2 text </p></div></div>
+                <div class= "row"><div class= "col c3"><p>Choice 3 text</p></div></div> -->
+           </div> 
+           
+    
+    </div>  
+          
+    
+    <script type="text/javascript">
+    
+
+    var q1 = { 
+        question: "In what substance did that low-life, Jim Halpert, hide my favorite stapler?",
+        choice1: "Mose's famous goosefruit pie",
+        choice2: "a soiled diaper from his offspring",
+        choice3: "a container of green gelatin",
+        // answer: choice3
+
+    };
+        
+        
+
+    var q2 = {
+        question: "What is the name of our Pennsylvania Dutch version of the pathetic Santa Clause?",
+        choice1: "Belsnickel",
+        choice2: "Grendel",
+        choice3: "Rumplestiltskin",
+        // answer: choice1
+    };
+
+    var q3 = {
+        question: "Bears, Beets....",
+        choice1: "Xena, Princess Warrior",
+        choice2: "Battlestar Galactica",
+        choice3: "Breaking Bad",
+        // answer: choice2
+    };
+    
+    var q4 = {
+        question: "What was the name of the Civil War event that took place amidst my family's farm?",
+        choice1: "Battle of the Schrutes",
+        choice2: "Old Willy Nilly Kins",
+        choice3: "Battle of Schrute Farms",
+        // anawer: choice3
+    };
+
+    var q5 = {
+        question: "What was my favorite nickname for the woman I loved?",
+        choice1: "Frodo",
+        choice2: "Monkey",
+        choice3: "Pinkey",
+        // answer: choice2
+
+
+    };
+   
+    var allQuestions = [ q1, q2, q3, q4, q5];
+    var computerPick= allQuestions[Math.floor(Math.random() * allQuestions.length)];
+
+
+        function startGame(){
+            
+                $(".questions").text(computerPick.question);
+                console.log(computerPick)
+                $(".q1").text(computerPick.choice1);
+                console.log(computerPick.choice1)
+                $(".q2").text(computerPick.choice2);
+                console.log(computerPick.choice2)
+                $(".q3").text(computerPick.choice3);
+                console.log(computerPick.choice3);
+        }
+
+
+            // Picking the correct answer and alerting win or lose
+            // Question 1
+        //    userGuess= document.onclick(h5);
+
+        // if(computerPick === q1 && userGuess=== choice3){
+        //     alert("You win!");
+        // }
+        // else{
+        //     alert("You lose!");
+        // }
+        // // Question 2
+        // if(computerPick=== q2 && userGuess === choice1){
+        //     alert("You win!")
+        // }
+        // else{
+        //     alert("You lose!")
+        // }
+
+        // // Question 3
+        // if(computerPick === q3 && userGuess === choice2){
+        //     alert("You win!")
+        // }
+        // else{
+        //     alert("You lose!")
+        // }
+        // // Question 4
+
+        // if(computerPick === q4 && userGuess === choice3){
+        //     alert("You win!")
+        // }
+        // else{
+        //     alert("You lose!")
+        // }
+
+        // // Question 5
+
+        // if(computerPick=== q5 && userGuess === choice2){
+        //     alert("You win!")
+        // }
+        // else{
+        //     alert("You lose!")
+        // }
+
+
+
+        startGame(); 
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

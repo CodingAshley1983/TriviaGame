@@ -1,0 +1,69 @@
+.jumbotron {
+    background-color: grey;
+    opacity: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color:black;
+    font-size: 100px;
+    margin-bottom:0;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    background-image: url(http://i76.photobucket.com/albums/j20/ladynirvana1/watch.jpg);
+    height: 250px;
+    width: 250px;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-size: 80px;  
+    padding-right: 5%; 
+    padding-left: 8%;
+    padding-bottom: 10%;
+}
+
+body {
+    background-image: url(https://ewedit.files.wordpress.com/2017/07/gettyimages-141189010.jpg)
+
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    height: 125px;
+    border: 1px;
+    border-color: solid black;
+    background-color: rgb(192, 181, 181);
+    filter:alpha(opacity=85); /* IE */
+            -moz-opacity:0.85; /* Mozilla */
+            opacity: 0.85;
+            filter:alpha(opacity=85);
+    font-size: 24px;
+   
+}
+.question {
+    height: 400px;
+}
+
+.game {
+    background-image: url(http://spitznas.info/wp-content/uploads/2018/04/avery-note-card-template-to-fresh-index-5315.jpg);
+    height: 250px;
+    width: 650px;
+    font-family: 'Permanent Marker', cursive;
+    border:1px;
+    border-color: solid brown;
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+h5 {
+    font-size: 19px;
+    text-align: center;
+}
+
+h5:hover{
+    background-color: yellow;
+}
