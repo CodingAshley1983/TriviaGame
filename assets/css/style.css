@@ -1,12 +1,13 @@
 .jumbotron {
     background-color: grey;
     opacity: 80%;
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: center;
     color:black;
-    font-size: 100px;
-    margin-bottom:0;
+    font-size: 50px;
+    padding-bottom: 5%;
+    margin-bottom:1%;
 }
 
 .timer{
@@ -44,7 +45,8 @@ body {
    
 }
 .question {
-    height: 400px;
+    height: 300px;
+    margin-bottom: 5%;
 }
 
 .game {
@@ -67,3 +69,104 @@ h5 {
 h5:hover{
     background-color: yellow;
 }
+
+.wins {
+    text-align: center;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+.losses {
+    text-align: center;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding-bottom: 2%;
+    padding-left: 5%;
+
+}
+
+#messageLose {
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; 
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    background-color: grey;
+    font-size: 150px;
+    color: white;
+    border: black;
+    margin: 0 auto;
+    position: fixed; /* Sit on top of the page content */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+
+}
+
+#messageWin {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: grey;
+    font-size: 150px;
+    color: white;
+    border: black;
+    margin: 0 auto;
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+ 
+
+
+}
+
+#timeUp {
+    display: flex;
+    text-align: center;
+    padding: 10%;
+    background-color: grey;
+    font-size: 150px;
+    color: white;
+    border: black;
+    margin: 0 auto;
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#finalScreen{
+    text-align: center;
+    height: 600px;
+    width: 60%;
+    padding: 10%;
+    background-color: grey;
+    font-size: 40px;
+    color: white;
+    border: black;
+    margin: 0 auto;
+
+}
+
